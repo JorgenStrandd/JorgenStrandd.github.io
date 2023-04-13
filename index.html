@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger King Shopping Cart</title>
+  <!-- Links to CSS -->
+  <link rel="stylesheet" href="/Styles/stylesCART.css">
+  <link rel="stylesheet" href="/Styles/styles.css">
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Nav -->
+    <div class="nav container">
+      <a href="" class="logo">Burger King</a>
+      <ul>
+        <li><a href="/Html/Index.html">Home</a></li>
+        <li><a href="/Html/products.html">Products</a></li>
+        <li><a href="/Html/cart.html">Cart</a></li>
+        <li><a href="/Html/stores.html">Stores</a></li>
+      </ul>
+      <!-- Cart Icon -->
+      <i class='bx bx-shopping-bag' id="cart-icon"></i>
+      <!-- Cart -->
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- Content -->
+        <div class="cart-content"></div>
+        <!-- Total -->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">0 KR</div>
+        </div>
+        <!-- Buy Button -->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!-- Cart Close -->
+        <i class='bx bx-x' id="close-cart"></i>
+      </div>
+    </div>
+  </header>
+  <section class="slideshow">
+    <div class="slideshow-container">
+      <div class="mySlides" style="background-image: url('/Images/BKNO0060_Gourmet_Cajun_Steakhous.png');"></div>
+      <div class="mySlides" style="background-image: url('/Images/BKNO0060_Plant_Based_Web_Karusell_1800x760\ \(1\)\ \(1\).png');"></div>
+      <div class="mySlides" style="background-image: url('/Images/BUKI0166_Cookies_and_Pies_Web_Karusell_1800x760.png');"></div>
+      <div class="mySlides" style="background-image: url('/Images/BUKI0180_LTO_Chili_Mayo_Web_Karusell_1800x760\ \(1\).png');"></div>
+      <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+      <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+  </section>
+  <section class="hero" id="hero">
+    <h1>Welcome to Burger King</h1>
+    <p>Get your favorite burgers, fries, and shakes today!</p>
+    <button>Order Now</button>   
+  </section>
+  <!-- Shop -->
+  <section class="shop container">
+    <h2 class="section-tittle">Shop Products</h2>
+    <form class="search-form">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Go</button>
+    </form>
+    <!-- Content -->
+    <div class="shop-content">
+      <!-- Box1 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/BKNO0060_Gourmet_Cajun_Steakhouse_Web_Thumbnail_300x270_Cajun_Double.png" alt="" class="product-img">
+        <h2 class="product-title">DOUBLE GOURMET GRILL CAJUN</h2>
+        <span class="price">105 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box2 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/BKNO0060_Gourmet_Cajun_Steakhouse_Web_Thumbnail_300x270_Cajun_Single.png" alt="" class="product-img">
+        <h2 class="product-title">GOURMET GRILL CAJUN</h2>
+        <span class="price">90 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box3 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/BKNO0060_Gourmet_Cajun_Steakhouse_Web_Thumbnail_300x270_Steakhouse_Double.png" alt="" class="product-img">
+        <h2 class="product-title">DOUBLE GOURMET GRILL STEAKHOUSE</h2>
+        <span class="price">105 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box4 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/BUKI0180_Web_Thumbnail_Chili_Mayo_300x270_0.png" alt="" class="product-img">
+        <h2 class="product-title">CHILI MAYO LOVER</h2>
+        <span class="price">93 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box5 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/300x270_dbl_whopper-cheese.png" alt="" class="product-img">
+        <h2 class="product-title">DBL WHOPPER CHEESE</h2>
+        <span class="price">83 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box6 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/300x270_whopper-cheese.png" alt="" class="product-img">
+        <h2 class="product-title">WHOPPER CHEESE</h2>
+        <span class="price">73 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box7 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/300x270px_BaconKing.png" alt="" class="product-img">
+        <h2 class="product-title">BACON KING</h2>
+        <span class="price">105 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box8 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/300x270px_BigKing_product-detail_0.png" alt="" class="product-img">
+        <h2 class="product-title">BIG KING</h2>
+        <span class="price">115 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box9 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/300x270px_Skjelvet (002).png" alt="" class="product-img">
+        <h2 class="product-title">STEAKHOUSE BACON KING</h2>
+        <span class="price">105 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box10 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/BaconWhopperCheese_300x270_burgerkingno.png" alt="" class="product-img">
+        <h2 class="product-title">BACON WHOPPER CHEESE</h2>
+        <span class="price">93 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box11 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/BB_BIGKINGXXL-v1_extra_cheese.jpg" alt="" class="product-img">
+        <h2 class="product-title">BIG KING™ XXL</h2>
+        <span class="price">130 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box12 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/BK_Bacon_DB_BBQ_300x270.jpg" alt="" class="product-img">
+        <h2 class="product-title">BACON DOUBLE BBQ</h2>
+        <span class="price">105 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box13 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/DOUBLE WHOPPER®_0.jpg" alt="" class="product-img">
+        <h2 class="product-title">DBL WHOPPER</h2>
+        <span class="price">93 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box14 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/300x270_dbl_whopper-cheese.png" alt="" class="product-img">
+        <h2 class="product-title">BACON DOUBLE CHEESEBURGER</h2>
+        <span class="price">93 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box15 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/DBHamburger_300x270_burgerkingno.png" alt="" class="product-img">
+        <h2 class="product-title">DOUBLE HAMBURGER</h2>
+        <span class="price">93 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box16 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/HAMBURGER_0 (1).jpg" alt="" class="product-img">
+        <h2 class="product-title">HAMBURGER</h2>
+        <span class="price">45 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box17 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/TRPLWhopper_300x270_burgerkingno.png" alt="" class="product-img">
+        <h2 class="product-title">TRIPPEL WHOPPER</h2>
+        <span class="price">130 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box18 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/WHOPPER JR®_0.jpg" alt="" class="product-img">
+        <h2 class="product-title">WHOPPER JR</h2>
+        <span class="price">50 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box19 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/WhopperJuniorCheese_300x270_burgerkingno.png" alt="" class="product-img">
+        <h2 class="product-title">WHOPPER JR CHEESE</h2>
+        <span class="price">65 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box20 -->
+      <div class="product-box">
+        <img src="/Images/Burgers/X-LONG HOT CHILI CHEESE_0.jpg" alt="" class="product-img">
+        <h2 class="product-title">X-LONG HOT CHILI CHEESE</h2>
+        <span class="price">93 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box21 -->
+      <div class="product-box">
+        <img src="/Images/Drinks/300x270_Coca-Cola_Glass_96dpi.png" alt="" class="product-img">
+        <h2 class="product-title">Coca Cola</h2>
+        <span class="price">30 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box22 -->
+      <div class="product-box">
+        <img src="/Images/Drinks/300x270_Coca-Cola_utensukker_Glass_96dpi.png" alt="" class="product-img">
+        <h2 class="product-title">COCA COLA UTEN SUKKER</h2>
+        <span class="price">30 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box23 -->
+      <div class="product-box">
+        <img src="/Images/Drinks/BUKI0154_Web_Produktbilde_Monster_Ultra White_Launch_500x540.png" alt="" class="product-img">
+        <h2 class="product-title">MONSTER ULTRA WHITE</h2>
+        <span class="price">30 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box24 -->
+      <div class="product-box">
+        <img src="/Images/Drinks/BUKI0154_Web_Thumbnail_Monster_Launch_300x270.png" alt="" class="product-img">
+        <h2 class="product-title">MONSTER</h2>
+        <span class="price">30 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box25 -->
+      <div class="product-box">
+        <img src="/Images/Drinks/BUKI0154_Web_Thumbnail_Monster_mango_loco_Launch_300x2702 (1).png" alt="" class="product-img">
+        <h2 class="product-title">MONSTER MANGO</h2>
+        <span class="price">30 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box26 -->
+      <div class="product-box">
+        <img src="/Images/Drinks/FANTA ORANGE.jpg" alt="" class="product-img">
+        <h2 class="product-title">FANTA ORANGE</h2>
+        <span class="price">30 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box27 -->
+      <div class="product-box">
+        <img src="/Images/Drinks/FantaExotic_300x270_burgerkingno.png" alt="" class="product-img">
+        <h2 class="product-title">FANTA EXOTIC</h2>
+        <span class="price">30 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box28 -->
+      <div class="product-box">
+        <img src="/Images/Drinks/SPRITE-logo-v1_2014_300x270.jpg" alt="" class="product-img">
+        <h2 class="product-title">SPRITE</h2>
+        <span class="price">30 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box29 -->
+      <div class="product-box">
+        <img src="/Images/Snacks/BUKI0056_Web_Thumbnail_300x270_Pannekake8stk_0.png" alt="" class="product-img">
+        <h2 class="product-title">PANNEKAKE 8STK</h2>
+        <span class="price">30 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box30 -->
+      <div class="product-box">
+        <img src="/Images/Snacks/BUKI0700_produktbilde_creamyshake_caramel_thumbnail_300x270px3.png" alt="" class="product-img">
+        <h2 class="product-title">CREAMY COFFEE CARAMEL SHAKE</h2>
+        <span class="price">55 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box31 -->
+      <div class="product-box">
+        <img src="/Images/Snacks/BUKI0700_produktbilde_creamyshake_caramel_thumbnail_300x270px3_1.png" alt="" class="product-img">
+        <h2 class="product-title">CREAMY SALTY CARAMEL SHAKE</h2>
+        <span class="price">55 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box32 -->
+      <div class="product-box">
+        <img src="/Images/Snacks/BUKI0700_produktbilde_creamyshake_sjokolade_thumbnail_300x270px.png" alt="" class="product-img">
+        <h2 class="product-title">CREAMY CHOCOLATE SHAKE</h2>
+        <span class="price">55 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box33 -->
+      <div class="product-box">
+        <img src="/Images/Snacks/BUKI0700_produktbilde_creamyshake_thumbnail_300x270px2.png" alt="" class="product-img">
+        <h2 class="product-title">CREAMY OREO® SHAKE</h2>
+        <span class="price">55 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box34 -->
+      <div class="product-box">
+        <img src="/Images/Snacks/BUKI0700_produktbilde_creamyshake_thumbnail_300x270px4.png" alt="" class="product-img">
+        <h2 class="product-title">CREAMY BANANA SPLIT SHAKE</h2>
+        <span class="price">55 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box35 -->
+      <div class="product-box">
+        <img src="/Images/Snacks/Online_Thumbnail_Smarties-300x270.jpg" alt="" class="product-img">
+        <h2 class="product-title">KING FUSION SMARTIES</h2>
+        <span class="price">25 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box36 -->
+      <div class="product-box">
+        <img src="/Images/Snacks/Softis-sjokolade_300x270_burgerkingno.png" alt="" class="product-img">
+        <h2 class="product-title">SOFTIS MED SJOKOLADETOPPING</h2>
+        <span class="price">20 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box37 -->
+      <div class="product-box">
+        <img src="/Images/Snacks/Thumbnail_King-Fusion_Oreo.jpg" alt="" class="product-img">
+        <h2 class="product-title">KING FUSION OREO®</h2>
+        <span class="price">25 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!-- Box38 -->
+      <div class="product-box">
+        <img src="/Images/Snacks/Thumbnail_King_fusion_salty-caramel.jpg" alt="" class="product-img">
+        <h2 class="product-title">KING FUSION SALTY CARAMEL</h2>
+        <span class="price">25 KR</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="stores">
+    <h2>Stores</h2>
+    <p>Find the nearest Burger King store:</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1386.0685810532061!2d18.918365777301997!3d69.6715430447594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45c4c43bf24146dd%3A0x5f53a8c008777873!2sBurger%20King!5e0!3m2!1sno!2sno!4v1681417756429!5m2!1sno!2sno" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Burger King. All rights reserved.</p>
+  </footer>
+
+  <script src="/JS/Cart.js"></script>
+  
+  </body>
+  </html>
